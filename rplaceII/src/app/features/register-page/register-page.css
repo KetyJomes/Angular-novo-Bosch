@@ -1,50 +1,84 @@
-
 .container {
   height: 100vh;
-  background-color: #d6cec4;
-
+  background: linear-gradient(135deg, #d6cec4, #c2b9ad);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .card {
-  width: 500px;
-  height: 600px;
-  background-color: #eaeaea;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: fadeIn 0.5s ease;
 }
 
 .card-header {
   background-color: #9da44c;
-  padding: 25px;
+  padding: 30px 20px;
   text-align: center;
-}
-
-.card-header h2 {
   color: white;
-  font-size: 28px;
 }
 
 .card-body {
+  padding: 30px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100%;
+}
+
+.card-body {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #9da44c;
+  box-shadow: 0 0 0 2px rgba(157, 164, 76, 0.2);
 }
 
 button {
-  background-color: #9da44c;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #9da44c, #7f863c);
   color: white;
   border: none;
-  padding: 12px 25px;
-  border-radius: 6px;
+  padding: 12px;
+  border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 button:hover {
-  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+}
+
+a {
+  color: #9da44c;
+  font-weight: bold;
+  text-decoration: none;
 }

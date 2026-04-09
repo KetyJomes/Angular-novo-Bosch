@@ -1,0 +1,16 @@
+<div class="canvas">
+  <div class="grid">
+    <div *ngFor="let row of pixels; let i = index" class="row">
+      <div *ngFor="let pixel of row; let j = index"
+           class="pixel"
+           [style.background]="pixel"
+           (click)="paintPixel(i,j)">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="color-picker">
+  <label>Escolha a cor: </label>
+  <input type="color" [(ngModel)]="selectedColor">
+</div>
